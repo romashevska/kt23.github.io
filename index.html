@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--sprite
+  <svg style="display: none;" >
+    <symbol id="telegram" width="26" height="26" viewBox="0 0 26 26" fill="none" >
+      <g>
+        <path d="M24.7936 0.329932C24.5487 0.0331928 24.1427 -0.0768511 23.7816 0.0552015L0.849204 8.29881C0.391059 8.46444 0.069481 8.8661 0.00978113 9.34707C-0.0493466 9.82576 0.16275 10.2902 0.560622 10.5576L3.83859 12.7835C4.15616 12.9992 4.56452 13.0223 4.9046 12.8438L12.0152 9.11389L6.47339 13.2301C6.21323 13.4234 6.05778 13.7317 6.05778 14.0547V17.8675C6.05778 18.2608 6.27465 18.6211 6.62369 18.8082C6.97331 18.9953 7.39559 18.9767 7.72766 18.7589L10.2181 17.1156L12.6671 18.7767C12.8817 18.923 13.1373 19 13.3951 19C13.4823 19 13.5699 18.9911 13.6561 18.9732C14 18.9019 14.3042 18.6905 14.4909 18.3934L24.8663 1.37497C25.0683 1.0473 25.0393 0.627998 24.7936 0.329932V0.329932ZM13.3404 17.4689L10.8042 15.7486C10.6278 15.6287 10.4245 15.5687 10.2213 15.5687C10.0226 15.5687 9.82364 15.6262 9.6495 15.7412L7.52339 17.1441V14.2698L17.309 7.00143C17.746 6.6768 17.856 6.08598 17.5648 5.62721C17.2734 5.16844 16.6899 5.01343 16.2075 5.26653L4.45065 11.4337L1.67814 9.55103L22.7957 1.95991L13.3404 17.4689Z" fill="white"/> 
+      </g>
+
+    </symbol>
+
+  </svg>-->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header_top" id="header_top" >
+      <a href="#" class="logo">
+        <img src="./images/logo 2.svg" alt="logo" class="logo_img" >
+      </a>
+      
+      
+       <nav class="nav" id="nav">
+          
+        <a class="nav__link" href="#" data-scroll="#service">посЛУГИ</a>
+        <a class="nav__link" href="#"data-scroll="#benefits">Переваги</a>
+        <a class="nav__link" href="#"data-scroll="#carousel">Авто</a>
+        <a class="nav__link" href="#"data-scroll="#contact">Контакти</a>
+        
+      </nav>
+      <a href="tel:+380505556677" class="phone">+38 (050) 555 66 77</a>
+        
+      
+      <nav class="dropdown">
+        <div class="burger">
+          <button class="dropbtn" type="button" id="dropbtnNav"></button>
+        </div>
+        <div class="dropdown-content">
+      <a class="nav__link" href="#" data-scroll="#service">посЛУГИ</a>
+      <a class="nav__link" href="#" data-scroll="#benefits">Переваги</a>
+      <a class="nav__link" href="#" data-scroll="#carousel">Авто</a>
+      <a class="nav__link" href="#" data-scroll="#contacts">Контакти</a>
+</div>
+
+   </nav>
+
+   <button class="burger_example" type="button" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
+
+    </div>
+    
+    <div class="header_content">
+      
+      <h1 class="header_title">авто з сша “під ключ”</h1>
+      <h2 class="header_subtitle">ЗАмов СоБі АВТО З США з ВиГоДОю ДО 40%
+      </h2>
+      <p class="header_text">Підбір, купівля, доставка, розтаможка, ремонт, оформлення по договору</p>
+      <a href="#" class="button">КОНСУЛЬТАЦІЯ ЄКСПЕРТА</a>
+      
+      <div class="social header__social">
+        <a class="social__link" href="#">
+          <img class="social__img" src="./images/icon/instagram.svg" alt="instagram icon">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__img" src="./images/icon/telegram.svg" alt="telegram icon">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__img" src="./images/icon/whatsapp.svg" alt="whatsapp icon">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__img" src="./images/icon/facebook.svg" alt="facebook icon">
+        </a>
+      </div>
+      
+      <img class="header_images" src="./images/ford-mustang.png"  alt="ford-mustang">
+    </div>
+      
+      
+  </div>
+  </div>
+</header>  
+  <section class="service" id="service">
+    <div class="container">
+      <h2 class="title">НАШі посЛУГИ</h2>
+      <div class="service__inner">
+        <div class="service__content">
+          <div class="service__content__box">
+            <h6 class="service__content__title">Чому ввезення авто з США?</h6>
+            <div class="service__content__textbox">Ми порівняли ринки США з Європейськими і зрозуміли, що покупка автомобіля в Америці вигідніша в кілька разів, як би парадоксально це не звучало. Це викликано продуманою логістикою, рівнем розвитку сервісів щодо оцінювання стану авто та самим процесом купівлі автомобіля.</div>
+            <div class="service__content__textbox">Більшість громадян США беруть автомобіль у лізинг на кілька років і весь час експлуатації сама лізингова компанія займається постійним ТО автомобіля, внаслідок чого машини зі США – один з найкращих виборів для автолюбителів України.</div>
+          </div>
+          
+          
+          <div class="service__content__box">
+            <h6 class="service__content__title">Через що така низька ціна?
+            </h6>
+            <div class="service__content__textbox">Биті автомобілі із США викуповуються з аукціонів страхових компаній. На цих аукціонах машина втрачає половину ціни навіть через мінімальні пошкодження. Якщо враховувати грошові витрати, а саме викуп, доставку, митницю та ремонт, то ціна аналогічного за станом автомобіля в Україні буде вищою на 35-50%, а нові коштуватимуть космічні гроші.      </div>
+          </div>
+         
+          <a href="#" class="button button-decor">консультація експерта</a>
+          </div>
+          <ol class="service__list">
+            <li class="service__item">
+              <p class="service__item__title">Купівля авто</p>
+              <p class="service__item__text">Підбір автомобіля та експертна перевірка</p>
+            </li>
+            <li class="service__item">
+              <p class="service__item__title">Доставка морем</p>
+              <p class="service__item__text">Розрахунок оптимальної вартості доставки авто</p>
+            </li>
+            <li class="service__item">
+              <p class="service__item__title">Розстаможка авто</p>
+              <p class="service__item__text">Прохождення таможеного оформлення (2-3 дня)</p>
+            </li>
+            <li class="service__item">
+              <p class="service__item__title">Ремонт авто</p>
+              <p class="service__item__text">Комплексний ремонт автомобіля на  СТО</p>
+            </li>
+            <li class="service__item">
+              <p class="service__item__title">Сертификація</p>
+              <p class="service__item__text">Послуга надається  по бажанню</p>
+            </li>
+            <li class="service__item">
+              <p class="service__item__title">Постановка на облік</p>
+              <p class="service__item__text">Оформлення автомобіля в Україні</p>
+            </li>
+          </ol>
+       
+
+      </div>
+    </div>
+  </section>
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="benefits__inner">
+        <img src="./images/mashine.png" alt="" class="benefits__img">
+        <div class="benefits__content">
+          <h2 class="title benefits__title">ЧоМУ Ми?</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <p class="benefits__item__num">650</p>
+              <p class="benefits__item__title">успішно доставлених авто</p>
+              <p class="benefits__item__text">великий досвід пригону автомобілів із США під ключ, усі клієнти залишилися задоволені на 100%</p>
+            </li>
+
+            <li class="benefits__item">
+              <p class="benefits__item__num">5</p>
+              <p class="benefits__item__title">років на ринку України</p>
+              <p class="benefits__item__text">Працюємо по всій території України, працюємо за договором із клієнтами</p>
+            </li>
+
+            <li class="benefits__item">
+              <p class="benefits__item__num">100 %</p>
+              <p class="benefits__item__title">довіри клієнтів</p>
+              <p class="benefits__item__text">Онлайн звітність. Ви завжди знаєте статус підбору вашого авто. Фото та відео звіт</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="carousel" id="carousel">
+    <div class="container">
+      <H2 class="title carousel__title">ПРИГНАНі НАМИ АВТО</h2>
+      <div class="carousel__inner">
+        <div class="carousel__item">
+          <div class="carousel__item__box">
+            <img src="./images/slider/q8.png" alt="q8" class="carousel__item__img">
+            <h4 class="carousel__item__title">INFINITI QX50 2016 р.</h4>
+            <p class="carousel__item__text">Економія 4500 $</p>
+          </div>
+          <div class="carousel__item__box">
+            <img src="./images/slider/tesla.png" alt="tesla" class="carousel__item__img">
+            <h4 class="carousel__item__title">TESLA 2017 р.</h4>
+            <p class="carousel__item__text">Економія 5500 $</p>
+          </div>
+          <div class="carousel__item__box">
+            <img src="./images/slider/tesla9.png" alt="tesla9" class="carousel__item__img">
+            <h4 class="carousel__item__title"> TESLA MODEL 3 2018 р.</h4>
+            <p class="carousel__item__text">Економія 5500 $</p>
+          </div>
+
+          <div class="carousel__item__box">
+            <img src="./images/slider/q8.png" alt="q8" class="carousel__item__img">
+            <h4 class="carousel__item__title">INFINITI QX50 2016 р.</h4>
+            <p class="carousel__item__text">Економія 4500 $</p>
+          </div>
+          <div class="carousel__item__box">
+            <img src="./images/slider/tesla.png" alt="tesla" class="carousel__item__img">
+            <h4 class="carousel__item__title">TESLA 2017 р.</h4>
+            <p class="carousel__item__text">Економія 5500 $</p>
+          </div>
+          <div class="carousel__item__box">
+            <img src="./images/slider/tesla9.png" alt="tesla9" class="carousel__item__img">
+            <h4 class="carousel__item__title"> TESLA MODEL 3 2018 р.</h4>
+            <p class="carousel__item__text">Економія 5500 $</p>
+          </div>
+
+          <div class="carousel__item__box">
+            <img src="./images/slider/q8.png" alt="q8" class="carousel__item__img">
+            <h4 class="carousel__item__title">INFINITI QX50 2016 р.</h4>
+            <p class="carousel__item__text">Економія 4500 $</p>
+          </div>
+          <div class="carousel__item__box">
+            <img src="./images/slider/tesla.png" alt="tesla" class="carousel__item__img">
+            <h4 class="carousel__item__title">TESLA 2017 р.</h4>
+            <p class="carousel__item__text">Економія 5500 $</p>
+          </div>
+          <div class="carousel__item__box">
+            <img src="./images/slider/tesla9.png" alt="tesla9" class="carousel__item__img">
+            <h4 class="carousel__item__title"> TESLA MODEL 3 2018 р.</h4>
+            <p class="carousel__item__text">Економія 5500 $</p>
+          </div>
+          
+          
+        </div>
+      </div>  
+    </div>
+  </section>
+ 
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__info">
+          <h2 class="title">КОНТАКТи</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__item__title">Адреса</p>
+              <p class="contacts__item__text">Києв, Поділ<br>
+                вул. Константиновська, б.71</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item__title">Час работи</p>
+              <p class="contacts__item__text">Пн-Сб: с 9:00 до 19:00,<br>
+                Нед.: вихідний</p>
+            </li>
+
+            <li class="contacts__item">
+              <p class="contacts__item__title">Телефон</p>
+              <p class="contacts__item__text">+38 (050) 555 66 77</p>
+            </li>
+          </ul>
+        </div> 
+          <form action="" class="contacts__form">
+            <h2 class="title contacts__title">залишити заявку</h2> 
+            <input class="contacts__input" type="text"placeholder="Як Вас звуть?">
+            <input class="contacts__input" type="text"placeholder="Ваш номер телефону">
+            <button class="button contact__button button">відправити заявку</button>
+          </form>
+
+       
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="logo footer__logo">
+          <img src="./images/logo 2.svg" alt="logo" class="logo_img" >
+        </a>
+
+
+        <div class="social footer__social">
+          <a class="social__link" href="#">
+            <img class="social__img" src="./images/icon/instagram.svg" alt="instagram icon">
+          </a>
+          <a class="social__link" href="#">
+            <img class="social__img" src="./images/icon/telegram.svg" alt="telegram icon">
+          </a>
+
+          <a class="social__link" href="#">
+            <img class="social__img" src="./images/icon/whatsapp.svg" alt="whatsapp icon">
+          </a>
+          <a class="social__link" href="#">
+            <img class="social__img" src="./images/icon/facebook.svg" alt="facebook icon">
+          </a>
+        </div>
+        
+
+        <p class="footer__copy">Політика конфиденційності</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
