@@ -30,8 +30,9 @@ $(function(){
       event.preventDefault();
       let elementId=$(this).data('scroll');
       let elementOffset=$(elementId).offset().top;
-      nav.removeClass("show");
+      // nav.removeClass("show");
       
+      console.log(elementId);
       $("html, body").animate({
         scrollTop:elementOffset -70
       });
